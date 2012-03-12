@@ -2,16 +2,17 @@
   "name": "ss-jade",
   "author": "Owen Barnes <owen@socketstream.org>",
   "description": "Jade wrapper for SocketStream 0.3",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./lib/wrapper.js",
   "repository": {
-    "url": ""
+    "type" : "git",
+    "url": "https://github.com/socketstream/ss-jade.git"
   },
   "engines": {
     "node": ">= 0.6.0"
   },
   "dependencies": {
-    "jade": "0.20.x"
+    "jade": "0.21.x"
   },
   "devDependencies": {}
 }
