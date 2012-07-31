@@ -1,7 +1,7 @@
 // Jade 'HTML' wrapper for SocketStream 0.3
 
-var fs = require('fs')
-  , jade = require('jade');
+var fs = require('fs'),
+    jade = require('jade');
 
 exports.init = function(root, config) {
 
@@ -34,5 +34,5 @@ exports.init = function(root, config) {
 
       cb(output);
     }
-  }
-}
+  };
+};
