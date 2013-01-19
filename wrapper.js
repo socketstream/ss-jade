@@ -19,7 +19,7 @@ exports.init = function(root, config) {
 
     compile: function(path, options, cb) {
 
-      var locals = {};
+      var locals = (options && options.locals) ? options.locals : {};
 
       // Merge any locals passed to config.locals
       if (config.locals && typeof(config.locals) === 'object')
