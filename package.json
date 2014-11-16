@@ -12,7 +12,7 @@
     "node": ">= 0.6.0"
   },
   "dependencies": {
-    "jade": "0.27.x"
+    "jade": ">= 1.7.0"
   },
   "devDependencies": {}
 }
