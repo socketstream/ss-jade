@@ -9,10 +9,10 @@
     "url": "https://github.com/socketstream/ss-jade.git"
   },
   "engines": {
-    "node": ">= 0.6.0"
+    "node": ">= 0.10.32"
   },
   "dependencies": {
-    "jade": "0.27.x"
+    "jade": "1.9.2"
   },
   "devDependencies": {}
 }
