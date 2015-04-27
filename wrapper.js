@@ -26,12 +26,16 @@ exports.init = function(root, config) {
       // Merge any locals passed to config.locals
       if (config.locals && typeof(config.locals) === 'object')
         for (var attrname in config.locals) { locals[attrname] = config.locals[attrname]; }
+      // Delete it. it's not native to the Jade API
+      delete config.locals;
 
       // If passing optional headers for main view HTML
       if (options && options.headers) locals['SocketStream'] = options.headers;
 
+      config.filename = path;
+
       var input = fs.readFileSync(path, 'utf8');
-      var parser = jade.compile(input, {filename: path});
+      var parser = jade.compile(input, config);
       var output = parser(locals);
 
       cb(output);
