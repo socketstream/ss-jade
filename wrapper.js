@@ -24,13 +24,18 @@ exports.init = function(root, config) {
       var locals = {};
 
       // Merge any locals passed to config.locals
-      if (config.locals && typeof(config.locals) === 'object')
-        for (var attrname in config.locals) { locals[attrname] = config.locals[attrname]; }
+      if (config.locals && typeof(config.locals) === 'object') {
+        for (var attrname in config.locals) {
+          locals[attrname] = config.locals[attrname];
+        }
+      }
       // Delete it. it's not native to the Jade API
       delete config.locals;
 
       // If passing optional headers for main view HTML
-      if (options && options.headers) locals['SocketStream'] = options.headers;
+      if (options && options.headers) {
+        locals.SocketStream = options.headers;
+      }
 
       config.filename = path;
 
