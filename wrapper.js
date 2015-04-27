@@ -1,3 +1,5 @@
+'use strict';
+
 // Jade 'HTML' wrapper for SocketStream 0.3
 
 var fs = require('fs'),
