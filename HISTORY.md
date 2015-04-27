@@ -1,3 +1,9 @@
+0.1.4 / 2015-04-26
+==================
+
+* Pass Jade API options in, alongside locals
+* Updated Jade to 1.9.2
+
 0.1.3 / 2012-07-31
 ==================
 
